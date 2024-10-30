@@ -1,0 +1,19 @@
+{
+  "name": "wp-cloud/saml-sso-plugin",
+  "autoload": {
+    "psr-4": {
+      "CloudSingleSignOn\\": "assets/"
+    }
+  },
+  "minimum-stability": "dev",
+  "config": {
+    "platform": {
+      "php": "7.2.5"
+    }
+  },
+  "require": {
+    "lightsaml/lightsaml": "*",
+    "ext-simplexml": "*",
+    "ext-openssl": "*"
+  }
+}

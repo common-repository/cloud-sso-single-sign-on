@@ -1,0 +1,526 @@
+@import url('../fonts/plugin-fonts.css');
+
+div#wpcontent {
+    padding: 0 24px;
+}
+
+.row {
+    margin: 0;
+}
+
+/*-------------------LAYOUT-------------------*/
+
+div.page-wrapper {
+    padding: 0 32px;
+}
+
+div.page-section {
+    border: 1px solid #CFCFCF;
+    border-radius: 12px;
+    margin: 0 -32px;
+}
+
+div.section-without-overflow {
+    margin: 0;
+}
+
+.section-divider {
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.section-wrapper {
+    padding: 24px 32px
+}
+
+.section_x_wrapper {
+    padding: 0 32px;
+}
+
+.overflow-section {
+    margin: 0 -32px;
+}
+
+.text-secondary {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7C7C7C;
+    margin: 0;
+    text-decoration: none;
+}
+
+div.page-header-wrapper {
+    width: 100%;
+    padding: 24px 32px;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+/*-------------------text----------------------*/
+
+b {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.text-header-main {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.text-main {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.text-main-bolder {
+    font-weight: 500;
+}
+
+.page-header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #6EC1E4;
+}
+
+.tab-divider {
+    height: 4px;
+    background: #73809E;
+    border-radius: 4px 4px 0 0;
+}
+
+.button-section {
+    cursor: pointer;
+}
+
+.code-transparent {
+    background: none;
+    color: #E83E8C;
+    padding: 0;
+}
+
+.code-block {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0A0A0A;
+}
+
+/*----------fields----------------*/
+.disable-webkit::-webkit-outer-spin-button,
+.disable-webkit::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.disable-webkit[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+input.wcs-input-field, textarea.wcs-input-field, select.wcs-input-field {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+    text-decoration: none;
+    padding: 8px;
+}
+
+input.wcs-input-field:disabled:not(input[type="file"]), input.wcs-input-field:read-only:not(input[type="file"]) {
+    background-color: #F8F8F8;
+    border: 1px solid #8C8F94;
+    color: #7C7C7C;
+}
+
+input.wcs-input-field:read-only:not(input[type="file"]) {
+    color: black;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*--------------------default button---------------*/
+.wcs-btn {
+    font-family: 'Inter';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #82C4E1;;
+    border-radius: 4px;
+    height: 36px;
+    padding: 0 16px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    outline: none;
+    width: fit-content;
+}
+
+.wcs-btn:hover, .wcs-btn:active, .wcs-btn:focus{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2F9DCE;
+    box-shadow: none;
+    outline: none;
+}
+
+.wcs-active-btn {
+    background-color: #2F9DCE;
+}
+
+.wcs-save-btn {
+    width: 230px;
+}
+
+/*disabled state*/
+.wcs-btn-disabled,
+.wcs-btn-disabled:hover,
+.wcs-btn-disabled:active,
+.wcs-btn-disabled:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    cursor: not-allowed;
+}
+
+/*success type*/
+.wcs-success-btn {
+    background-color: #7FBA00;
+}
+
+.wcs-success-btn:hover, .wcs-success-btn:active, .wcs-success-btn:focus {
+    background-color: #76AC00;
+}
+
+/*danger type*/
+.wcs-danger-btn {
+    background-color: #E17572;
+}
+
+.wcs-danger-btn:hover, .wcs-danger-btn:active, .wcs-danger-btn:focus {
+    background-color: #E13B3B;
+}
+
+.wcs-light-btn {
+    background: #F9F9F9;
+    border: 1px solid #E5E5E5;
+    color: #424242;
+}
+
+.wcs-light-btn:hover, .wcs-light-btn:active, .wcs-light-btn:focus {
+    background-color: #e2e6ea;
+    color: #424242;
+}
+
+.wcs-btn-square {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+}
+
+/*-------------------------default link btn-----------------------------*/
+.wcs-link-btn {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    outline: none;
+    width: fit-content;
+    color: #2F9DCE;
+}
+
+.wcs-link-btn:hover, .wcs-link-btn:active, .wcs-link-btn:focus {
+    text-decoration: none;
+    box-shadow: none;
+    color: #2F9DCE;
+}
+
+
+/*success btn type*/
+.wcs-success-link-btn {
+    color: #7FBA00;
+}
+
+.wcs-success-link-btn:hover, .wcs-success-link-btn:active, .wcs-success-link-btn:focus {
+    color: #7FBA00;
+}
+
+/*danger btn type*/
+.wcs-danger-link-btn {
+    color: #E17572;
+}
+
+.wcs-danger-link-btn:hover, .wcs-danger-link-btn:active, .wcs-danger-link-btn:focus {
+    color: #E17572;
+}
+
+/*------------------------------Other----------------------------*/
+
+.select-provider-section {
+    background: #F7F9FF;
+    border-radius: 12px;
+    padding: 24px 32px 32px 32px;
+    width: 100%;
+}
+
+.provider-section {
+    margin-top: 20px;
+    width: 72px;
+}
+
+.provider-select-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 12px;
+}
+
+.provider-logo {
+    width: 50%;
+}
+
+.provider-name {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2F9DCE;
+}
+
+.select-provider-section div.available-providers > *:not(:last-child) {
+    margin-right: 16px;
+}
+
+.selected-provider {
+    background: rgba(110, 193, 228, 0.3);
+    border: 1px solid #82C4E1;
+    border-radius: 12px;
+}
+
+.selected-provider-logo {
+    height: 90px;
+}
+
+.form-sep {
+    display: block;
+    text-align: center;
+}
+.form-sep:after {
+    display: block;
+    content: '';
+    width: 100%;
+    background: #6c757d;
+    height: 2px;
+    margin-top: -13px;
+}
+
+.color-picker-size {
+    flex: 0 1 76px;
+    height: 35px
+}
+
+/*------------------------------Configure Service Provider----------------------------*/
+
+.form-section-wrapper > .wcs-btn.my-3 {
+    margin-top: 0px !important;
+}
+
+.service-provider-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.service-provider-organization-checkbox {
+    width: 60%;
+}
+
+.service-provider-field > p {
+    margin: 0px;
+}
+
+.service-provider-field > input {
+    min-width: 60%;
+}
+
+.service-provider-copy-field {
+    display: flex;
+    min-width: 60%;
+}
+.service-provider-copy-field > input{
+    width: 100%;
+}
+
+.service-provider-copy-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    background-image: url("../../resources/images/icons_copy.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.download-link {
+    margin-bottom: 4px;
+}
+
+/*------------------------------Styles for locked payment blocks----------------------------*/
+
+.prem-info {
+    padding: 12px 32px;
+    background: #F9F9F9;
+    border: 1px solid #F2F2F2;
+    position: relative;
+}
+
+.prem-info-centered {
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.prem-info-centered > img {
+    position: initial;
+    margin-left: 16px;
+}
+
+.prem-padlock {
+    width: 40px;
+    position:absolute;
+    right: -1.3rem;
+    top: -1.3rem;
+}
+
+.prem-feature-description{
+    display: none;
+    position: absolute;
+    right: 1.9rem;
+    top: -1.9rem;
+    width: 300px;
+    padding: 10px;
+    text-align: left;
+    background: #FFFFFF;
+    color: #0A0A0A;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px;
+    z-index: 1;
+}
+.prem-feature-description:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #FFFFFF;
+    top: 25%;
+    left: 100%;
+}
+.prem-feature-description:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #CFCFCF;
+    top: 25%;
+    left: 100.3%;
+}
+.only-one-provider {
+    pointer-events: none;
+}
+
+.deactivate-button {
+    pointer-events: none;
+}
+.deactivate-button > button {
+    background: #CFCFCF;
+    color: #F8F8F8;
+    border-radius: 4px;
+}

@@ -1,0 +1,58 @@
+div.leave-review-wrapper {
+    margin-top: 24px;
+    border-radius: 12px;
+    border: 1px solid #CFCFCF;
+    border-left: 12px solid #FDC702;
+    padding: 20px 40px 20px 20px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.leave-review-wrapper .leave-review-content-wrapper {
+    margin-left: 10px;
+}
+
+div.leave-review-wrapper .leave-review-dismiss-button {
+    display: flex;
+    width: fit-content;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+div.leave-review-wrapper .leave-review-dismiss-button:active, div.leave-review-wrapper .leave-review-dismiss-button:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+div.leave-review-wrapper p.leave-review-main-text {
+    margin: 0 0 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+}
+
+div.leave-review-wrapper a.leave-review-wordpress-link {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration-line: underline;
+    margin-top: 12px;
+    color: #2F9DCE;
+}
+
+div.leave-review-wrapper a.leave-review-wordpress-link:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
